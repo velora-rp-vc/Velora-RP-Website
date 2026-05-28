@@ -149,3 +149,121 @@ padding:15px;
 padding:80px;
 text-align:center;
 }
+
+/* ========================= */
+/* PARTNER NEON DESIGN */
+/* ========================= */
+
+.partner-section {
+    width: 90%;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Überschrift */
+.partner-section h1 {
+    color: white;
+    font-size: 55px;
+    margin-bottom: 40px;
+
+    text-shadow:
+        0 0 10px #ff00cc,
+        0 0 20px #ff00cc,
+        0 0 40px #ff00cc;
+}
+
+/* CARD */
+.partner-card {
+    position: relative;
+
+    background: rgba(15, 0, 30, 0.8);
+
+    border: 2px solid #ff00cc;
+    border-radius: 25px;
+
+    padding: 30px;
+    margin-bottom: 30px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 0 15px #ff00cc,
+        0 0 40px rgba(255, 0, 200, 0.4);
+
+    transition: 0.3s ease;
+}
+
+/* Hover Effekt */
+.partner-card:hover {
+    transform: translateY(-6px) scale(1.02);
+
+    box-shadow:
+        0 0 20px #ff00cc,
+        0 0 50px #ff00cc,
+        0 0 90px rgba(255, 0, 200, 0.8);
+}
+
+/* LINK */
+.partner-card a {
+    display: block;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 34px;
+    font-weight: 900;
+
+    text-shadow:
+        0 0 5px #fff,
+        0 0 15px #ff00cc;
+}
+
+/* Partner Typ */
+.partner-card p {
+    color: #cccccc;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Status Punkt */
+.status {
+    position: absolute;
+
+    left: 20px;
+    top: 20px;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+}
+
+/* Farben */
+.green {
+    background: #00ff66;
+    box-shadow: 0 0 15px #00ff66;
+}
+
+.yellow {
+    background: #ffd000;
+    box-shadow: 0 0 15px #ffd000;
+}
+
+.red {
+    background: #ff2222;
+    box-shadow: 0 0 15px #ff2222;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .partner-card a {
+        font-size: 24px;
+    }
+
+    .partner-section h1 {
+        font-size: 38px;
+    }
+
+}
